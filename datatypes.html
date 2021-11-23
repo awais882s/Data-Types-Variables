@@ -58,17 +58,60 @@
       var SomeVar;
       var num = 3242;
       var numFloat = 232.23;
-      var stringData = "My name is awais"
+      var stringData = "My name is awais";
       var flag = true;
       // String data
       // '334'
       // "awais"
       // "AWAIS s"
-      console.log("data type of variable ==>" , typeof flag)
-      console.log("data type is ===>", typeof stringData)
-      console.log("data type is ===>", typeof num)
+      console.log("data type of variable ==>", typeof flag);
+      console.log("data type is ===>", typeof stringData);
+      console.log("data type is ===>", typeof num);
 
-      
+      // Type convert for js
+      var numberInString = "123";
+      console.log("Data type of===>", typeof numberInString);
+      var numberInnumber = parseInt(numberInString);
+      console.log("Data type of===>", typeof numberInnumber);
+      // convert in float
+      const NumberFloat = parseFloat(numberInnumber);
+      console.log("Data type of ===>>>", typeof NumberFloat);
+      //  Math expressions
+      // DMAS
+      // + , -
+      // * , / , %
+      var addTwoNumber = 2 - (10 / 10) * (23 + 23) * 3;
+      console.log("ADDTWONUMBERS", addTwoNumber);
+      // statements
+      // ==
+      // <
+      // >
+      // >=
+      // <=
+      // &&
+      // ||
+      // assignment operator
+
+      var a = 2;
+      var b = 2;
+      // equal to operator
+      // in math a = a
+      // in computer a == a > no data type check
+      // in computer a===a > data type will also consider
+      console.log(2 == 3);
+      var result = (2 > 2 && 3 == 3) || (4 == 4 && 2 < 4);
+      console.log("Result", result);
+      //  And Table
+      //  T T = T
+      //  T F = F
+      //  F T = F
+      //  F F = F
+
+      // OR TABLE
+      //  T T = T
+      //  T F = T
+      //  F T = T
+      //  F F = F
     </script>
   </body>
 </html>
