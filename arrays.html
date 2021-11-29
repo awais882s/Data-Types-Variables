@@ -76,12 +76,32 @@
       // console.log(loc); because its not defined
 
       function mylocalScope() {
-        const myVar = ""
+        const myVar = "";
         console.log("inside myLocalScope", myVar);
       }
       mylocalScope();
 
-      console.log("outside myLocalScope",myVar);
+      // console.log("outside myLocalScope",myVar); not defined
+      // Global vs. Local Scope in Functions
+      const someVAr = "Hat";
+
+      function myFun() {
+        const someVar = "Head";
+        return someVar;
+      }
+
+      myFun();
+      console.log(myFun()); //acess insides value
+      console.log(someVAr); //access outsides value
+      // another examples
+      const outerWear = "T-shirt";
+      function myOutFit() {
+        const outerWear = "sweater";
+        return outerWear;
+      }
+      myOutFit();
+      console.log(myOutFit());
+      console.log(outerWear);
     </script>
   </body>
 </html>
