@@ -66,6 +66,22 @@
 
       timesfive(5);
       console.log(timesfive);
+      // Local Scope and Functions
+
+      function myTest() {
+        const loc = "foo";
+        console.log(loc);
+      }
+      myTest();
+      // console.log(loc); because its not defined
+
+      function mylocalScope() {
+        const myVar = ""
+        console.log("inside myLocalScope", myVar);
+      }
+      mylocalScope();
+
+      console.log("outside myLocalScope",myVar);
     </script>
   </body>
 </html>
