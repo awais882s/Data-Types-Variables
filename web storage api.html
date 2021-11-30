@@ -17,7 +17,26 @@
       localStorage.setItem("day", "monday");
       localStorage.setItem("Awais", "Chasmatos");
       localStorage.setItem("Name", "Muhammad Awais");
-    
+      //  storing objects
+      const userInfo = {
+        name: "Awais",
+        age: 22,
+        section: "Batch#4"
+      };
+      localStorage.setItem("user-info",JSON.stringify(userInfo));
+      const animals = {
+        cato:"cats",
+        name:"dogs",
+        animal:"bufflos",
+      }
+      localStorage.setItem("Animals Name and Ages",JSON.stringify(animals))
+      //  another examples
+      const websites ={
+        web:"frecodcamp",
+        domain:"https",
+        owner:"freecode"
+      }
+      localStorage.setItem("websites info",JSON.stringify(websites))
     </script>
   </body>
 </html>
